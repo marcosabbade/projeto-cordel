@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'passion';
+    src: url(../fontes/PassionOne-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sri';
+    src: url(../fontes/Sriracha-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte2: 'passion', 'cursive';
+    --fonte3: 'sri', 'cursive';
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(117, 116, 116);
+    font-family: var(--fonte1);
+}
+
+header {
+    font-family: var(--fonte3);
+    color: rgb(245, 244, 244);
+    text-align: center;
+    background-color: black;
+    padding: 50px;
+}
+
+header > h1 {
+    font-size: 10vw;
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+}
+
+header > p {
+    font-family: var(--fonte1);
+    padding-bottom: 50px;
+}
+
+section {
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 4.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.404);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.829);
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(228, 228, 228);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: var(--fonte1);
+    font-weight: 300;
+    padding: 10px;
+}
